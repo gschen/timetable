@@ -1,0 +1,170 @@
+﻿body
+{
+	padding-top: 50px;
+}
+@media (max-width: 980px) {
+
+  /* Remove any padding from the body */
+  body {
+    padding-top: 0;
+  }
+}
+.brand
+{
+/*	color:#eee !important;*/
+}
+.subhead h1
+{
+	font-size: 40px;
+}
+span.visible-phone
+{
+	display:inline !important;
+}
+@media (max-width: 767px) 
+{
+	.subhead h1
+	{
+		font-size: 30px;
+	}
+	.span1, .span2, .span3, .span4, .span5, .span6, .span7, .span8, .span9, .span10, .span11
+	{
+	    clear:both
+	}
+}
+@media (min-width: 768px) 
+{
+	span.visible-phone
+	{
+		display:none !important;
+	}
+}
+@media (max-width: 480px) 
+{
+	.form-search input
+	{
+		width: 170px;
+	}
+}
+h2
+{
+	font-size: 22px;
+	line-height: normal;
+	margin-bottom:4px;
+	margin-top:0px;
+}
+h3
+{
+	font-size: 14px;
+	font-weight:normal;
+}
+.tab-pane .row
+{
+	margin-right:-20px;
+}
+.btn
+{
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.btn:first-child
+{
+    margin-left: 0px;
+}
+.regMark
+{
+    cursor:pointer;
+    margin:-8px;
+    padding:8px;
+    line-height:19px;
+}
+.negative
+{
+    background-color: rgba(200,54,54,0.5);
+}
+.positive
+{
+    background-color: rgba(54,200,54,0.5);
+}
+.tempMark
+{
+    color: rgba(0,0,0,0.3);
+}
+.plainList
+{
+	list-style-type:none;
+	margin-left:0px;
+}
+li.Horizontal
+{
+	float:left;
+}
+li.Vertical
+{
+	border-bottom-width: 1px;
+	border-bottom-color:#eee;
+	border-bottom-style:solid;
+	margin-bottom:5px;
+}
+li.Vertical:last-child
+{
+	border-bottom-width: 0px;
+}
+.paraTrim *
+{
+	display:none;
+}
+.paraTrim *:first-child
+{
+	display:block;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	white-space:nowrap;
+}
+.nav-tabs
+{
+	margin-left:-20px;
+	margin-right:-20px;
+	padding-left:20px;
+	padding-right:20px;
+	margin-bottom:0px;
+	border-bottom: 1px solid #ddd;
+}
+.nav-tabs > li > a,
+.nav-pills > li > a {
+  padding-right: 6px;
+  padding-left: 6px;
+  margin-right: 2px;
+  line-height: 14px;
+}
+.tab-content
+{
+	margin-left:-20px;
+	margin-right:-20px;
+	margin-bottom:10px;
+	
+	padding-left:20px;
+	padding-right:20px;
+	padding-top:18px;
+
+	border-top-width: 0px;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	border-left: 1px solid #ddd;
+}
+
+.tab-pane .form-actions
+{
+	margin-left: -20px;
+	margin-right: -20px;
+	margin-bottom: 0px;
+}
+.datePicker
+{
+    width: 100px
+}
+td .btn
+{
+    margin-bottom: -2px;
+    margin-top: -2px;
+}

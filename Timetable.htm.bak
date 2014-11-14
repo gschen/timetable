@@ -1,0 +1,410 @@
+﻿<!-- 
+ This work by http://twitter.com/Ben_Lowe of http://www.triballabs.net is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 2.0 UK: England & Wales License.
+ http://creativecommons.org/licenses/by-nc-sa/2.0/uk/ 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap-responsive.css" rel="stylesheet" />
+    <link href="css/docs.css" rel="stylesheet" />
+    <link href="css/tribal-bootstrap.css" rel="stylesheet" />
+    <link href="css/tribal-timetable.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="js/jquery-latest.js"></script>
+    <script type="text/javascript" src="js/jquery.ba-resize.js"></script>
+    <script type="text/javascript" src="js/bootstrap-tooltip.js"></script>
+    <script type="text/javascript" src="js/bootstrap-collapse.js"></script>
+    <script type="text/javascript" src="js/tribal.js"></script>
+    <script type="text/javascript" src="js/tribal-shared.js"></script>
+    <script type="text/javascript" src="js/tribal-timetable.js"></script>
+    <title>jQuery Timetable</title>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-21875603-1']);
+        _gaq.push(['_addDevId', 'i9k95']); // Google Analyticator App ID with Google
+        _gaq.push(['_trackPageview']);
+        _gaq.push(['_trackPageLoadTime']);
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+<body data-offset="50">
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar">
+                    </span>
+                </button>
+                <a class="brand" href="#">TribalLabs</a>
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+                        <li class="active"><a href="Timetable.htm">Timetable</a></li>
+                        <li><a href="TwoColumnList.htm">Multi-Column Definition List</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <header class="jumbotron subhead" id="overview"> 
+			<h1>jQuery Timetable</h1>
+		</header>
+        <p>View the <a target="_blank" href="http://www.triballabs.net/2012/09/jquery-html-timetable-layout/">blog post</a> supporting this sample code.</p>
+        <div class="timetable" data-days="5" data-hours="8">
+            <ul class="tt-events">
+                <li class="tt-event btn-success" data-id="10" data-day="0" data-start="0" data-duration="1.5">
+                    AS Applied Maths (ASAMath 1)<br />
+                    09:00 - 10:30<br />
+                    C318 ACL Lecture</li>
+                <li class="tt-event btn-success" data-id="11" data-day="0" data-start="1.6667" data-duration="1.5">
+                    A2 Statistics (A2Stat 2)<br />
+                    10:40 - 12:10<br />
+                    C310 ACL Lecture</li>
+                <li class="tt-event btn-primary" data-id="12" data-day="0" data-start="4.1667" data-duration="1.5">
+                    A2 Pure Maths (A2PMath 1)<br />
+                    13:10 - 14:40<br />
+                    B125 ACL Tutorial</li>
+                <li class="tt-event btn-warning" data-id="13" data-day="0" data-start="5.6667" data-duration="1.8333">
+                    Marking<br />
+                    14:40 - 16:30<br />
+                    Self managed time</li>
+                <li class="tt-event btn-danger" data-id="14" data-day="0" data-start="6" data-duration="0.25">
+                    Bob Smith<br />
+                    15:00 - 15:15<br />
+                    Meeting</li>
+                <li class="tt-event btn-danger" data-id="15" data-day="0" data-start="6.75" data-duration="0.25">
+                    Jane Jones<br />
+                    15:45 - 16:00<br />
+                    Meeting</li>
+                <li class="tt-event btn-warning" data-id="20" data-day="1" data-start="0" data-duration="1.6667">
+                    Marking<br />
+                    09:00 - 10:40<br />
+                    Self managed time</li>
+                <li class="tt-event btn-success" data-id="21" data-day="1" data-start="1.6667" data-duration="1.5">
+                    AS Pure Maths (ASPMath)<br />
+                    10:40 - 12:10<br />
+                    C300 ACL Lecture</li>
+                <li class="tt-event btn-danger" data-id="22" data-day="1" data-start="3.1667" data-duration="0.25">
+                    Fred Brown<br />
+                    12:10 - 12:25<br />
+                    Meeting</li>
+                <li class="tt-event btn-success" data-id="23" data-day="1" data-start="4.1667" data-duration="1.5">
+                    AS Applied Maths (ASAMath 1)<br />
+                    13:10 - 14:40<br />
+                    C318 ACL Lecture</li>
+                <li class="tt-event btn-primary" data-id="24" data-day="1" data-start="5.8334" data-duration="1.5">
+                    A2 Statistics (A2Stat 2)<br />
+                    14:50 - 16:20<br />
+                    B121 ACL Tutorial</li>
+                <li class="tt-event btn-info" data-id="30" data-day="2" data-start="0" data-duration="8">
+                    Open day</li>
+                <li class="tt-event btn-primary" data-id="31" data-day="2" data-start="0" data-duration="1.5">
+                    AS Applied Maths (ASAMath 1)<br />
+                    09:00 - 10:30<br />
+                    C318 ACL Tutorial</li>
+                <li class="tt-event btn-primary" data-id="32" data-day="2" data-start="1.6667" data-duration="1.5">
+                    A2 Statistics (A2Stat 2)<br />
+                    10:40 - 12:10<br />
+                    C310 ACL Tutorial</li>
+                <li class="tt-event btn-success" data-id="33" data-day="2" data-start="4.1667" data-duration="1.5">
+                    A2 Pure Maths (A2PMath 1)<br />
+                    13:10 - 14:40<br />
+                    B125 ACL Lecture</li>
+                <li class="tt-event btn-success" data-id="34" data-day="2" data-start="5.8334" data-duration="1.5">
+                    AS Pure Maths (ASPMath)<br />
+                    14:50 - 16:20<br />
+                    B125 ACL Lecture</li>
+                <li class="tt-event btn-warning" data-id="40" data-day="3" data-start="0" data-duration="3">
+                    Marking<br />
+                    09:00 - 12:00<br />
+                    Marking</li>
+                <li class="tt-event btn-danger" data-id="41" data-day="3" data-start="3" data-duration="1.75">
+                    Planning meeting<br />
+                    12:00 - 13:45<br />
+                    A223 Meeting</li>
+                <li class="tt-event btn-danger" data-id="42" data-day="3" data-start="5" data-duration="0.5">
+                    Fred Brown<br />
+                    14:00 - 14:30<br />
+                    B137 Viva</li>
+                <li class="tt-event btn-danger" data-id="43" data-day="3" data-start="5.5" data-duration="0.5">
+                    Bob Smith<br />
+                    14:30 - 15:00<br />
+                    B137 Viva</li>
+                <li class="tt-event btn-danger" data-id="44" data-day="3" data-start="6" data-duration="0.5">
+                    Jane Jones<br />
+                    15:00 - 15:30<br />
+                    B137 Viva</li>
+                <li class="tt-event btn-danger" data-id="45" data-day="3" data-start="6.5" data-duration="0.5">
+                    Harry Franks<br />
+                    15:30 - 16:00<br />
+                    B137 Viva</li>
+                <li class="tt-event btn-info" data-id="50" data-day="4" data-start="0" data-duration="8">
+                    Not working</li>
+            </ul>
+            <div class="tt-times">
+                <div class="tt-time" data-time="0">
+                    09<span class="hidden-phone">.00</span></div>
+                <div class="tt-time" data-time="1">
+                    10<span class="hidden-phone">.00</span></div>
+                <div class="tt-time" data-time="2">
+                    11<span class="hidden-phone">.00</span></div>
+                <div class="tt-time" data-time="3">
+                    12<span class="hidden-phone">.00</span></div>
+                <div class="tt-time" data-time="4">
+                    13<span class="hidden-phone">.00</span></div>
+                <div class="tt-time" data-time="5">
+                    14<span class="hidden-phone">.00</span></div>
+                <div class="tt-time" data-time="6">
+                    15<span class="hidden-phone">.00</span></div>
+                <div class="tt-time" data-time="7">
+                    16<span class="hidden-phone">.00</span></div>
+            </div>
+            <div class="tt-days">
+                <div class="tt-day" data-day="0">
+                    M<span class="hidden-phone">on</span></div>
+                <div class="tt-day" data-day="1">
+                    T<span class="hidden-phone">ue</span></div>
+                <div class="tt-day" data-day="2">
+                    W<span class="hidden-phone">ed</span></div>
+                <div class="tt-day" data-day="3">
+                    T<span class="hidden-phone">hu</span></div>
+                <div class="tt-day" data-day="4">
+                    F<span class="hidden-phone">ri</span></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="span4">
+                <div class="timetable" data-days="5" data-hours="8">
+                    <ul class="tt-events">
+                        <li class="tt-event btn-success" data-id="10" data-day="0" data-start="0" data-duration="1.5">
+                            AS Applied Maths (ASAMath 1)<br />
+                            09:00 - 10:30<br />
+                            C318 ACL Lecture</li>
+                        <li class="tt-event btn-success" data-id="11" data-day="0" data-start="1.6667" data-duration="1.5">
+                            A2 Statistics (A2Stat 2)<br />
+                            10:40 - 12:10<br />
+                            C310 ACL Lecture</li>
+                        <li class="tt-event btn-primary" data-id="12" data-day="0" data-start="4.1667" data-duration="1.5">
+                            A2 Pure Maths (A2PMath 1)<br />
+                            13:10 - 14:40<br />
+                            B125 ACL Tutorial</li>
+                        <li class="tt-event btn-warning" data-id="13" data-day="0" data-start="5.6667" data-duration="1.8333">
+                            Marking<br />
+                            14:40 - 16:30<br />
+                            Self managed time</li>
+                        <li class="tt-event btn-warning" data-id="20" data-day="1" data-start="0" data-duration="1.6667">
+                            Marking<br />
+                            09:00 - 10:40<br />
+                            Self managed time</li>
+                        <li class="tt-event btn-success" data-id="21" data-day="1" data-start="1.6667" data-duration="1.5">
+                            AS Pure Maths (ASPMath)<br />
+                            10:40 - 12:10<br />
+                            C300 ACL Lecture</li>
+                        <li class="tt-event btn-danger" data-id="22" data-day="1" data-start="3.1667" data-duration="0.25">
+                            Fred Brown<br />
+                            12:10 - 12:25<br />
+                            Meeting</li>
+                        <li class="tt-event btn-success" data-id="23" data-day="1" data-start="4.1667" data-duration="1.5">
+                            AS Applied Maths (ASAMath 1)<br />
+                            13:10 - 14:40<br />
+                            C318 ACL Lecture</li>
+                        <li class="tt-event btn-primary" data-id="24" data-day="1" data-start="5.8334" data-duration="1.5">
+                            A2 Statistics (A2Stat 2)<br />
+                            14:50 - 16:20<br />
+                            B121 ACL Tutorial</li>
+                        <li class="tt-event btn-info" data-id="30" data-day="2" data-start="0" data-duration="8">
+                            Open day</li>
+                        <li class="tt-event btn-primary" data-id="31" data-day="2" data-start="0" data-duration="1.5">
+                            AS Applied Maths (ASAMath 1)<br />
+                            09:00 - 10:30<br />
+                            C318 ACL Tutorial</li>
+                        <li class="tt-event btn-primary" data-id="32" data-day="2" data-start="1.6667" data-duration="1.5">
+                            A2 Statistics (A2Stat 2)<br />
+                            10:40 - 12:10<br />
+                            C310 ACL Tutorial</li>
+                        <li class="tt-event btn-success" data-id="33" data-day="2" data-start="4.1667" data-duration="1.5">
+                            A2 Pure Maths (A2PMath 1)<br />
+                            13:10 - 14:40<br />
+                            B125 ACL Lecture</li>
+                        <li class="tt-event btn-success" data-id="34" data-day="2" data-start="5.8334" data-duration="1.5">
+                            AS Pure Maths (ASPMath)<br />
+                            14:50 - 16:20<br />
+                            B125 ACL Lecture</li>
+                        <li class="tt-event btn-info" data-id="50" data-day="4" data-start="0" data-duration="8">
+                            Not working</li>
+                    </ul>
+                    <div class="tt-times">
+                        <div class="tt-time" data-time="0">
+                            09</div>
+                        <div class="tt-time" data-time="1">
+                            10</div>
+                        <div class="tt-time" data-time="2">
+                            11</div>
+                        <div class="tt-time" data-time="3">
+                            12</div>
+                        <div class="tt-time" data-time="4">
+                            13</div>
+                        <div class="tt-time" data-time="5">
+                            14</div>
+                        <div class="tt-time" data-time="6">
+                            15</div>
+                        <div class="tt-time" data-time="7">
+                            16</div>
+                    </div>
+                    <div class="tt-days">
+                        <div class="tt-day" data-day="0">
+                            M</div>
+                        <div class="tt-day" data-day="1">
+                            T</div>
+                        <div class="tt-day" data-day="2">
+                            W</div>
+                        <div class="tt-day" data-day="3">
+                            T</div>
+                        <div class="tt-day" data-day="4">
+                            F</div>
+                    </div>
+                </div>
+            </div>
+            <div class="span8">
+                <div class="timetable" data-days="5" data-hours="8">
+                    <ul class="tt-events">
+                        <li class="tt-event btn-success" data-id="10" data-day="0" data-start="0" data-duration="1.5">
+                            AS Applied Maths (ASAMath 1)<br />
+                            09:00 - 10:30<br />
+                            C318 ACL Lecture</li>
+                        <li class="tt-event btn-success" data-id="11" data-day="0" data-start="1.6667" data-duration="1.5">
+                            A2 Statistics (A2Stat 2)<br />
+                            10:40 - 12:10<br />
+                            C310 ACL Lecture</li>
+                        <li class="tt-event btn-primary" data-id="12" data-day="0" data-start="4.1667" data-duration="1.5">
+                            A2 Pure Maths (A2PMath 1)<br />
+                            13:10 - 14:40<br />
+                            B125 ACL Tutorial</li>
+                        <li class="tt-event btn-warning" data-id="13" data-day="0" data-start="5.6667" data-duration="1.8333">
+                            Marking<br />
+                            14:40 - 16:30<br />
+                            Self managed time</li>
+                        <li class="tt-event btn-danger" data-id="14" data-day="0" data-start="6" data-duration="0.25">
+                            Bob Smith<br />
+                            15:00 - 15:15<br />
+                            Meeting</li>
+                        <li class="tt-event btn-danger" data-id="15" data-day="0" data-start="6.75" data-duration="0.25">
+                            Jane Jones<br />
+                            15:45 - 16:00<br />
+                            Meeting</li>
+                        <li class="tt-event btn-warning" data-id="20" data-day="1" data-start="0" data-duration="1.6667">
+                            Marking<br />
+                            09:00 - 10:40<br />
+                            Self managed time</li>
+                        <li class="tt-event btn-success" data-id="21" data-day="1" data-start="1.6667" data-duration="1.5">
+                            AS Pure Maths (ASPMath)<br />
+                            10:40 - 12:10<br />
+                            C300 ACL Lecture</li>
+                        <li class="tt-event btn-danger" data-id="22" data-day="1" data-start="3.1667" data-duration="0.25">
+                            Fred Brown<br />
+                            12:10 - 12:25<br />
+                            Meeting</li>
+                        <li class="tt-event btn-success" data-id="23" data-day="1" data-start="4.1667" data-duration="1.5">
+                            AS Applied Maths (ASAMath 1)<br />
+                            13:10 - 14:40<br />
+                            C318 ACL Lecture</li>
+                        <li class="tt-event btn-primary" data-id="24" data-day="1" data-start="5.8334" data-duration="1.5">
+                            A2 Statistics (A2Stat 2)<br />
+                            14:50 - 16:20<br />
+                            B121 ACL Tutorial</li>
+                        <li class="tt-event btn-info" data-id="30" data-day="2" data-start="0" data-duration="8">
+                            Open day</li>
+                        <li class="tt-event btn-primary" data-id="31" data-day="2" data-start="0" data-duration="1.5">
+                            AS Applied Maths (ASAMath 1)<br />
+                            09:00 - 10:30<br />
+                            C318 ACL Tutorial</li>
+                        <li class="tt-event btn-primary" data-id="32" data-day="2" data-start="1.6667" data-duration="1.5">
+                            A2 Statistics (A2Stat 2)<br />
+                            10:40 - 12:10<br />
+                            C310 ACL Tutorial</li>
+                        <li class="tt-event btn-success" data-id="33" data-day="2" data-start="4.1667" data-duration="1.5">
+                            A2 Pure Maths (A2PMath 1)<br />
+                            13:10 - 14:40<br />
+                            B125 ACL Lecture</li>
+                        <li class="tt-event btn-success" data-id="34" data-day="2" data-start="5.8334" data-duration="1.5">
+                            AS Pure Maths (ASPMath)<br />
+                            14:50 - 16:20<br />
+                            B125 ACL Lecture</li>
+                        <li class="tt-event btn-warning" data-id="40" data-day="3" data-start="0" data-duration="3">
+                            Marking<br />
+                            09:00 - 12:00<br />
+                            Marking</li>
+                        <li class="tt-event btn-danger" data-id="41" data-day="3" data-start="3" data-duration="1.75">
+                            Planning meeting<br />
+                            12:00 - 13:45<br />
+                            A223 Meeting</li>
+                        <li class="tt-event btn-danger" data-id="42" data-day="3" data-start="5" data-duration="0.5">
+                            Fred Brown<br />
+                            14:00 - 14:30<br />
+                            B137 Viva</li>
+                        <li class="tt-event btn-danger" data-id="43" data-day="3" data-start="5.5" data-duration="0.5">
+                            Bob Smith<br />
+                            14:30 - 15:00<br />
+                            B137 Viva</li>
+                        <li class="tt-event btn-danger" data-id="44" data-day="3" data-start="6" data-duration="0.5">
+                            Jane Jones<br />
+                            15:00 - 15:30<br />
+                            B137 Viva</li>
+                        <li class="tt-event btn-danger" data-id="45" data-day="3" data-start="6.5" data-duration="0.5">
+                            Harry Franks<br />
+                            15:30 - 16:00<br />
+                            B137 Viva</li>
+                        <li class="tt-event btn-info" data-id="50" data-day="4" data-start="0" data-duration="8">
+                            Not working</li>
+                    </ul>
+                    <div class="tt-times">
+                        <div class="tt-time" data-time="0">
+                            09<span class="hidden-phone">.00</span></div>
+                        <div class="tt-time" data-time="1">
+                            10<span class="hidden-phone">.00</span></div>
+                        <div class="tt-time" data-time="2">
+                            11<span class="hidden-phone">.00</span></div>
+                        <div class="tt-time" data-time="3">
+                            12<span class="hidden-phone">.00</span></div>
+                        <div class="tt-time" data-time="4">
+                            13<span class="hidden-phone">.00</span></div>
+                        <div class="tt-time" data-time="5">
+                            14<span class="hidden-phone">.00</span></div>
+                        <div class="tt-time" data-time="6">
+                            15<span class="hidden-phone">.00</span></div>
+                        <div class="tt-time" data-time="7">
+                            16<span class="hidden-phone">.00</span></div>
+                    </div>
+                    <div class="tt-days">
+                        <div class="tt-day" data-day="0">
+                            M<span class="hidden-phone">on</span></div>
+                        <div class="tt-day" data-day="1">
+                            T<span class="hidden-phone">ue</span></div>
+                        <div class="tt-day" data-day="2">
+                            W<span class="hidden-phone">ed</span></div>
+                        <div class="tt-day" data-day="3">
+                            T<span class="hidden-phone">hu</span></div>
+                        <div class="tt-day" data-day="4">
+                            F<span class="hidden-phone">ri</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="well">
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/deed.en_GB">
+                <img alt="Creative Commons Licence" style="border-width: 0" src="http://i.creativecommons.org/l/by-nc-sa/2.0/uk/88x31.png" /></a><br />
+            This work by <a target="_blank" href="http://twitter.com/Ben_Lowe">Ben Lowe</a> of 
+            <a target="_blank" href="http://www.triballabs.net">Tribal Labs</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/deed.en_GB">
+                Creative Commons Attribution-NonCommercial-ShareAlike 2.0 UK: England &amp; Wales
+                License</a>.
+        </div>
+    </div>
+</body>
+</html>

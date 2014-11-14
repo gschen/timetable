@@ -1,0 +1,143 @@
+﻿<!-- 
+ This work by http://twitter.com/Ben_Lowe of http://www.triballabs.net is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 2.0 UK: England & Wales License.
+ http://creativecommons.org/licenses/by-nc-sa/2.0/uk/ 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap-responsive.css" rel="stylesheet" />
+    <link href="css/docs.css" rel="stylesheet" />
+    <link href="css/tribal-bootstrap.css" rel="stylesheet" />
+    <link href="css/tribal-form.css" rel="stylesheet" />
+
+    <script type="text/javascript" src="js/jquery-latest.js"></script>
+    <script type="text/javascript" src="js/jquery.ba-resize.js"></script>
+    <script type="text/javascript" src="js/bootstrap-collapse.js"></script>
+    <script type="text/javascript" src="js/tribal-shared.js"></script>
+    <script type="text/javascript" src="js/tribal-form.js"></script>
+    <title>Multi-Column Definition Lists</title>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-21875603-1']);
+        _gaq.push(['_addDevId', 'i9k95']); // Google Analyticator App ID with Google
+        _gaq.push(['_trackPageview']);
+        _gaq.push(['_trackPageLoadTime']);
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+<body data-offset="50">
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar">
+                    </span>
+                </button>
+                <a class="brand" href="#">TribalLabs</a>
+                <div class="nav-collapse collapse">
+                    <ul class="nav">
+                        <li><a href="Timetable.htm">Timetable</a></li>
+                        <li class="active"><a href="TwoColumnList.htm">Multi-Column Definition List</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <header class="jumbotron subhead" id="overview"> 
+			<h1>Multi-Column Definition Lists</h1>
+		</header>
+        <p>
+            View the <a target="_blank" href="http://www.triballabs.net/2012/08/multi-column-bootstrap-definition-lists-using-jquery-html-css/">
+                blog post</a> supporting this sample code.</p>
+        <div class="well">
+            <dl class="dl-horizontal dl-multicolumn" data-colcount="3">
+                <dt>Name</dt>
+                <dd>
+                    Ben Lowe</dd>
+                <dt>Gender</dt>
+                <dd>
+                    Male</dd>
+                <dt>School</dt>
+                <dd>
+                    Sheffield School</dd>
+                <dt>DOB</dt>
+                <dd>
+                    01/01/1986</dd>
+                <dt>Email</dt>
+                <dd>
+                    <a href="mailto:name@company.co.uk">name@company.co.uk</a></dd>
+                <dt>Phone</dt>
+                <dd>
+                    <a class="visible-phone" href="tel:+441142196000">+44 114 2196000</a><a class="hidden-phone"
+                        href="callto:+441142196000">+44 114 2196000</a></dd>
+                <dt>Address</dt>
+                <dd>
+                    26 Main Road<br />
+                    Sheffield<br />
+                    S1 1AA</dd>
+            </dl>
+        </div>
+        <div class="row">
+            <div class="span8">
+                <div class="well">
+                    <dl class="dl-horizontal dl-multicolumn" data-colcount="2">
+                        <dt>Name</dt>
+                        <dd>
+                            Here is a much longer bit of text. Let's see if it wraps. Here is a much longer
+                            bit of text. Let's see if it wraps. Here is a much longer bit of text. Let's see
+                            if it wraps. Here is a much longer bit of text. Let's see if it wraps. Here is a
+                            much longer bit of text. Let's see if it wraps. Here is a much longer bit of text.
+                            Let's see if it wraps.</dd>
+                        <dt>Name</dt>
+                        <dd>
+                            Here is a much longer bit of text. Let's see if it wraps. Here is a much longer
+                            bit of text. Let's see if it wraps. Here is a much longer bit of text. Let's see
+                            if it wraps. Here is a much longer bit of text. Let's see if it wraps. Here is a
+                            much longer bit of text. Let's see if it wraps. Here is a much longer bit of text.
+                            Let's see if it wraps.</dd>
+                        <dt>Address with<br />
+                            a long name</dt>
+                        <dd>
+                            26 Main Road<br />
+                            Sheffield<br />
+                            S1 1AA</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="span4">
+                <div class="well">
+                    <dl class="dl-horizontal">
+                        <dt>Long text</dt>
+                        <dd>
+                            Here is a much longer bit of text. Let's see if it wraps. Here is a much longer
+                            bit of text. Let's see if it wraps. Here is a much longer bit of text. Let's see
+                            if it wraps. Here is a much longer bit of text. Let's see if it wraps. Here is a
+                            much longer bit of text. Let's see if it wraps. Here is a much longer bit of text.
+                            Let's see if it wraps.</dd>
+                        <dt>Short</dt>
+                        <dd>
+                            Here is a short bit of text.</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <div class="well">
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/deed.en_GB">
+                <img alt="Creative Commons Licence" style="border-width: 0" src="http://i.creativecommons.org/l/by-nc-sa/2.0/uk/88x31.png" /></a><br />
+            This work by <a target="_blank" href="http://twitter.com/Ben_Lowe">Ben Lowe</a>
+            of <a target="_blank" href="http://www.triballabs.net">Tribal Labs</a> is licensed
+            under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/2.0/uk/deed.en_GB">
+                Creative Commons Attribution-NonCommercial-ShareAlike 2.0 UK: England &amp; Wales
+                License</a>.
+        </div>
+    </div>
+</body>
+</html>

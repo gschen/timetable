@@ -1,0 +1,95 @@
+﻿
+.timetable
+{
+	background-color:#fff;
+    padding: 0px;
+    margin: 0px;
+	border: 1px solid #ddd;
+	position:relative;
+	margin-bottom:10px;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+.tt-times
+{
+	position:absolute;
+	margin:0px;
+	padding: 0px 0px 0px 116px;
+    border-width: 0px;
+	border-bottom: 1px solid #ddd;
+	display: table;
+	z-index:1;
+	background-color: rgb(240,240,240);
+	background-color: rgba(125,125,125,0.1);
+}
+.tt-time
+{
+	float: left;
+	padding: 5px;
+    margin: 0px;
+    border-width: 0px;
+	border-right: 1px solid rgb(220,220,220);
+	border-right: 1px solid rgba(125,125,125,0.1);
+	display: table-row;
+	overflow:hidden;
+}
+.tt-times .tt-time:last-child
+{
+	border-right: 0px;
+}
+.tt-days
+{
+	position:relative;
+    padding: 0px;
+    margin: 0px;
+    border-width: 0px;
+	border-right: 1px solid #ddd;
+	border-left: 0px solid #ddd;
+	display: table;
+	z-index:0;
+	background-color: rgb(240,240,240);
+	background-color: rgba(125,125,125,0.1);
+}
+.tt-day
+{
+/*	display: table-row;*/
+/*	overflow:hidden;
+	text-overflow: ellipsis;*/
+    margin: 0px;
+    border-width: 0px;
+	padding:5px;
+	min-height:30px;
+	border-bottom: 1px solid #ddd;
+}
+.tt-days .tt-day:last-child
+{
+	border-bottom: 0px;
+}
+.tt-events
+{
+	position:absolute;
+	list-style: none;
+	list-style-position: outside;
+	display: table-row;
+	z-index:2;
+	margin:0px;
+	padding:0px;
+}
+
+.tt-event, .tt-event:hover
+{
+	font-size:smaller;
+	line-height:normal;
+	position:absolute;
+	overflow:hidden;
+/*	text-overflow: ellipsis;*/
+	border: 1px solid #888;
+/*	background:#fff;*/
+	padding:3px;
+	white-space: nowrap;
+	text-shadow: none;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}

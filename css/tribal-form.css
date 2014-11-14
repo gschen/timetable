@@ -1,0 +1,49 @@
+﻿.well .dl-multicolumn
+{
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+}
+.dl-multicolumn
+{
+	display: table;
+}
+.dl-multicolumn dt
+{
+    margin:0px;
+	overflow:visible !important;
+    margin-right: 10px;
+}
+.dl-multicolumn dd
+{
+    margin:0px;
+	margin-right:0px;
+	margin-bottom: 5px;
+	/*display:table-cell;*/
+}
+.dl-multicolumn dd
+{
+	float:left;
+}
+@media (min-width: 768px) 
+{
+    .dl-multicolumn dt
+    {
+	    margin-bottom: 5px;
+    }
+	.dl-multicolumn dd
+	{
+	    margin-left:0px !important;
+    }
+}
+@media (max-width: 767px)
+{
+	.dl-multicolumn dd, .dl-multicolumn dt
+	{
+		display: block !important;
+		float: none;
+	}
+	.dl-multicolumn dd
+	{
+	    margin-left: 10px;
+	}
+}
